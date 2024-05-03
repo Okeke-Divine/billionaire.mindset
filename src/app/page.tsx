@@ -81,7 +81,7 @@ export default function Home() {
   ];
   return (
     <>
-      <main className="bg-gray-900  flex justify-center items-center min-h-[100vh] py-5">
+      <main className="bg-gray-900  flex justify-center items-center min-h-[100vh] py-5 px-5 md:px-0">
         <div>
           <div className="bg-gray-700 text-white p-10 w-fit rounded-lg">
             <div className="flex justify-center">
@@ -94,7 +94,7 @@ export default function Home() {
             <h1 className="text-4xl pt-5 font-bold">
               Classified (Course Bundle)
             </h1>
-            <div className="pb-5">
+            <div className="pb-5 pt-1">
               brought to you by{" "}
               <Link
                 href="https://linktr.ee/billionaire.mindset.41"
@@ -118,8 +118,16 @@ export default function Home() {
               </li>
             ))}
           </div>
-          <div>
-            This page was built by <Link href="https://okekedivine.vercel.app/" target="_blank" className="text-orange-400">Dev Divine</Link>.
+          <div className="py-10 text-xl text-white text-center">
+            This page was built by{" "}
+            <Link
+              href="https://okekedivine.vercel.app/"
+              target="_blank"
+              className="text-orange-400"
+            >
+              Dev Divine
+            </Link>
+            .
           </div>
         </div>
       </main>

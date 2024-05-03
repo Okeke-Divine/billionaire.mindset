@@ -87,7 +87,7 @@ export default function Home() {
             <img
               alt="Classified Course Bundle"
               src="/images/Classified (Course Bundle) - BM.png"
-              className="w-[200px] h-[200px] border-2 border-white"
+              className="w-full md:w-[350px] md:h-[350px] rounded-lg border-2 border-white"
             />
           </div>
           <h1 className="text-4xl pt-5 font-bold">

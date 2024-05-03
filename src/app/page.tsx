@@ -1,7 +1,11 @@
 import Link from "next/link";
 
 export default function Home() {
-  const courses = [
+  interface CourseItem {
+    name: string,
+    url: string
+  }
+  const courses: CourseItem[] = [
     {
       name: "Virtual Assistant Course",
       url: "https://mega.nz/folder/vxUznQ7D#Bv5EVMFKsd-ZIqfypCQEXA",

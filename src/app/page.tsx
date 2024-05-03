@@ -125,7 +125,7 @@ export default function Home() {
               target="_blank"
               className="text-orange-400"
             >
-              Dev Divine
+              Dev Divinho
             </Link>
             .
           </div>

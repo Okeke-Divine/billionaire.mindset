@@ -118,7 +118,7 @@ export default function Home() {
               </li>
             ))}
           </div>
-          <div className="py-10 text-xl text-white text-center">
+          <div className="py-10 text-xl font-bold text-white text-center">
             This page was built by{" "}
             <Link
               href="https://okekedivine.vercel.app/?entry=bm"

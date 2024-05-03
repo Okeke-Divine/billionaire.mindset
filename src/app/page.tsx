@@ -89,6 +89,7 @@ export default function Home() {
           <h1 className="text-4xl py-5 text-bold">
             Classified (Course Bundle)
           </h1>
+          <div>by <Link href="https://linktr.ee/billionaire.mindset.41" target="_blank" className="text-orange-400">Billionaire Mindset</Link></div>
           <h3 className="mb-2">Here are your courses:</h3>
           {courses.map((course, index) => (
             <li key={index} className="mb-2">

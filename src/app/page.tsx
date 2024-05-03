@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   interface CourseItem {
-    name: string,
-    url: string
+    name: string;
+    url: string;
   }
   const courses: CourseItem[] = [
     {
@@ -90,15 +90,28 @@ export default function Home() {
               className="w-[200px] h-[200px] border-2 border-white"
             />
           </div>
-          <h1 className="text-4xl py-5 text-bold">
+          <h1 className="text-4xl pt-5 font-bold">
             Classified (Course Bundle)
           </h1>
-          <div>by <Link href="https://linktr.ee/billionaire.mindset.41" target="_blank" className="text-orange-400">Billionaire Mindset</Link></div>
-          <h3 className="mb-2">Here are your courses:</h3>
+          <div className="pb-5">
+            brought to you by{" "}
+            <Link
+              href="https://linktr.ee/billionaire.mindset.41"
+              target="_blank"
+              className="text-orange-400"
+            >
+              Billionaire Mindset
+            </Link>
+          </div>
+          <h3 className="mb-2 font-bold text-xl">Here are the courses:</h3>
           {courses.map((course, index) => (
             <li key={index} className="mb-2">
-              {course.name} - 
-              <Link href={course.url} className="text-orange-400 pl-1" target={"_blank"}>
+              {course.name} -
+              <Link
+                href={course.url}
+                className="text-orange-400 pl-1"
+                target={"_blank"}
+              >
                 Start Learning
               </Link>
             </li>

@@ -82,40 +82,45 @@ export default function Home() {
   return (
     <>
       <main className="bg-gray-900  flex justify-center items-center min-h-[100vh] py-5">
-        <div className="bg-gray-700 text-white p-10 w-fit rounded-lg">
-          <div className="flex justify-center">
-            <img
-              alt="Classified Course Bundle"
-              src="/images/Classified (Course Bundle) - BM.png"
-              className="w-full md:w-[350px] md:h-[350px] rounded-lg border-2 border-white"
-            />
-          </div>
-          <h1 className="text-4xl pt-5 font-bold">
-            Classified (Course Bundle)
-          </h1>
-          <div className="pb-5">
-            brought to you by{" "}
-            <Link
-              href="https://linktr.ee/billionaire.mindset.41"
-              target="_blank"
-              className="text-orange-400"
-            >
-              Billionaire Mindset
-            </Link>
-          </div>
-          <h3 className="mb-2 font-bold text-xl">Here are the courses:</h3>
-          {courses.map((course, index) => (
-            <li key={index} className="mb-2 list-numbered">
-              {course.name} -
+        <div>
+          <div className="bg-gray-700 text-white p-10 w-fit rounded-lg">
+            <div className="flex justify-center">
+              <img
+                alt="Classified Course Bundle"
+                src="/images/Classified (Course Bundle) - BM.png"
+                className="w-full md:w-[350px] md:h-[350px] rounded-lg border-2 border-white"
+              />
+            </div>
+            <h1 className="text-4xl pt-5 font-bold">
+              Classified (Course Bundle)
+            </h1>
+            <div className="pb-5">
+              brought to you by{" "}
               <Link
-                href={course.url}
-                className="text-orange-400 pl-1"
-                target={"_blank"}
+                href="https://linktr.ee/billionaire.mindset.41"
+                target="_blank"
+                className="text-orange-400"
               >
-                Start Learning
+                Billionaire Mindset
               </Link>
-            </li>
-          ))}
+            </div>
+            <h3 className="mb-2 font-bold text-xl">Here are the courses:</h3>
+            {courses.map((course, index) => (
+              <li key={index} className="mb-2 list-numbered">
+                {course.name} -
+                <Link
+                  href={course.url}
+                  className="text-orange-400 pl-1"
+                  target={"_blank"}
+                >
+                  Start Learning
+                </Link>
+              </li>
+            ))}
+          </div>
+          <div>
+            This page was built by <Link href="https://okekedivine.vercel.app/" target="_blank" className="text-orange-400">Dev Divine</Link>.
+          </div>
         </div>
       </main>
     </>

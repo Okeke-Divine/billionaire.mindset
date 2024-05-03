@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   const courses = [
     {
@@ -75,7 +77,20 @@ export default function Home() {
   ];
   return (
     <>
-      <main></main>
+      <main className="bg-black text-white flex justify-center items-center min-h-[100vh]">
+        <div>
+          <h3>Here are your courses:</h3>
+          <ul className="pl-4">
+            {courses.map((course, index) => (
+              <li key={index}>
+                <Link href={course.url} target={"_blank"}>
+                  {course.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </main>
     </>
   );
 }

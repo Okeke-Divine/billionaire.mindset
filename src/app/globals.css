@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 @layer components{
-  
+
+}
+
+.list-numbered{
+  list-style-type: decimal;
 }

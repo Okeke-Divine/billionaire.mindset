@@ -105,7 +105,7 @@ export default function Home() {
           </div>
           <h3 className="mb-2 font-bold text-xl">Here are the courses:</h3>
           {courses.map((course, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 list-numbered">
               {course.name} -
               <Link
                 href={course.url}

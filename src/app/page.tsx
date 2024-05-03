@@ -93,7 +93,7 @@ export default function Home() {
           {courses.map((course, index) => (
             <li key={index} className="mb-2">
               {course.name} - 
-                <Link href={course.url} className="text-orange-400" target={"_blank"}>
+              <Link href={course.url} className="text-orange-400 pl-1" target={"_blank"}>
                 Start Learning
               </Link>
             </li>

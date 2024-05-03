@@ -90,15 +90,20 @@ export default function Home() {
             Classified (Course Bundle)
           </h1>
           <h3>Here are your courses:</h3>
-          <ul className="pl-4">
-            {courses.map((course, index) => (
-              <li key={index}>
-                <Link href={course.url} target={"_blank"}>
-                  {course.name}
+          {courses.map((course, index) => (
+            <li key={index} className="">
+              <div className="mb-2">
+                {course.name} -
+                <Link
+                  href={course.url}
+                  className="text-orange-400"
+                  target={"_blank"}
+                >
+                  Start Learning
                 </Link>
-              </li>
-            ))}
-          </ul>
+              </div>
+            </li>
+          ))}
         </div>
       </main>
     </>

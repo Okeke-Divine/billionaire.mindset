@@ -79,8 +79,16 @@ export default function Home() {
     <>
       <main className="bg-gray-900  flex justify-center items-center min-h-[100vh] py-5">
         <div className="bg-gray-700 text-white p-10 w-fit rounded-lg">
-          <img alt="Classified Course Bundle" src="/images/Classified (Course Bundle) - BM.png" className="w-[200px] h-[200px] border-2 border-white" />
-          <h1 className="text-4xl py-5">Classified (Course Bundle)</h1>
+          <div className="flex justify-center">
+            <img
+              alt="Classified Course Bundle"
+              src="/images/Classified (Course Bundle) - BM.png"
+              className="w-[200px] h-[200px] border-2 border-white"
+            />
+          </div>
+          <h1 className="text-4xl py-5 text-bold">
+            Classified (Course Bundle)
+          </h1>
           <h3>Here are your courses:</h3>
           <ul className="pl-4">
             {courses.map((course, index) => (
